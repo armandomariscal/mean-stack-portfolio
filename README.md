@@ -1,5 +1,3 @@
-# mean-stack-portfolio
-
 # MEAN Stack Interactive Portfolio & Study Tracker
 
 ## 🚀 The Vision
