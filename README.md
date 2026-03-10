@@ -21,7 +21,14 @@ I am building this project incrementally every Monday, documenting my progress i
 This repository is written **exclusively in English**. I am utilizing AI assistance to refine my technical writing, correct my grammar, and ensure I am using industry-standard terminology. My goal is to achieve professional fluency in English alongside my technical growth.
 
 ## 🗓️ Roadmap (The "Monday Dev" Plan)
-- [ ] Phase 1: Environment setup and Express.js "Hello World" server.
+- [x] Phase 1: Environment setup and Express.js "Hello World" server.
 - [ ] Phase 2: MongoDB schema design for "Experience" and "Education."
 - [ ] Phase 3: Angular dashboard layout and Material Design integration.
 - [ ] Phase 4: API integration and live data visualization.
+
+### 📅 Weekly Progress
+
+**Monday, March 9, 2026**
+* **Goal:** Phase 1 - Environment Setup.
+* **Completed:** Initialized NPM, installed Express, and created a basic "Hello World" server.
+* **English Milestone:** Learned the difference between "show" and "display" and practiced using "it" as a subject.
