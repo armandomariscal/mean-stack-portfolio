@@ -1,0 +1,23 @@
+{
+  "name": "mean-stack-portfolio",
+  "version": "1.0.0",
+  "description": "## 🚀 The Vision This project is a long-term professional development initiative. My goal is to build a high-performance, interactive dashboard that serves as both my professional CV and a live tracker of my journey toward becoming a **Senior MEAN Stack Developer**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/armandomariscal/mean-stack-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/armandomariscal/mean-stack-portfolio/issues"
+  },
+  "homepage": "https://github.com/armandomariscal/mean-stack-portfolio#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
