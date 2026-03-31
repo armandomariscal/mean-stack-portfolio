@@ -3,8 +3,15 @@
   "version": "1.0.0",
   "description": "## 🚀 The Vision This project is a long-term professional development initiative. My goal is to build a high-performance, interactive dashboard that serves as both my professional CV and a live tracker of my journey toward becoming a **Senior MEAN Stack Developer**.",
   "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "shared"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:api": "npm run dev -w api",
+    "start:client": "npm start -w client",
+    "dev": "concurrently \"npm run start:api\" \"npm run start:client\""
   },
   "repository": {
     "type": "git",
@@ -19,5 +26,8 @@
   "homepage": "https://github.com/armandomariscal/mean-stack-portfolio#readme",
   "dependencies": {
     "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
   }
 }
