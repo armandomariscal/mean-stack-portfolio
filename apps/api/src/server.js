@@ -1,4 +1,4 @@
-require('dotenv').config(); // 1. Load the .env file
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
@@ -10,7 +10,6 @@ const MONGO_URI = process.env.MONGO_URI;
 app.use(cors());
 app.use(express.json());
 
-// 2. Connect using the variable
 mongoose.connect(MONGO_URI)
   .then(() => console.log('Connected to MongoDB via .env!'))
   .catch(err => console.error('Database connection error:', err));

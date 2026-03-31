@@ -14,10 +14,9 @@ export class AppComponent implements OnInit {
   profile: any;
 
   ngOnInit() {
-    this.loadData(); // Load data automatically when the page starts
+    this.loadData();
   }
 
-  // This is the function the HTML was looking for!
   loadData() {
     this.cvService.getProfile().subscribe({
       next: (data) => {
