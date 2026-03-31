@@ -1,27 +1,59 @@
-# MEAN Stack Interactive Portfolio & Study Tracker
+# 🚀 MEAN Stack Monorepo: Professional Portfolio & Study Tracker
 
-## 🚀 The Vision
-This project is a long-term professional development initiative. My goal is to build a high-performance, interactive dashboard that serves as both my professional CV and a live tracker of my journey toward becoming a **Senior MEAN Stack Developer**.
+## 🎯 The Vision
+This project is a high-performance, interactive dashboard that serves as a live **Technical CV** and a tracker for my journey toward becoming a **Senior Full-Stack Developer**. 
 
-I am building this project incrementally every Monday, documenting my progress in both code and the English language.
+I build this project incrementally every Monday, focusing on three pillars: **Clean Code**, **Scalable Architecture**, and **Professional English Communication**.
 
-## 🛠️ Tech Stack (The MEAN Goal)
-* **M**ongoDB: For flexible data storage of my study milestones and projects.
-* **E**xpress.js: To build a robust API that manages my profile data.
-* **A**ngular: To create a dynamic, responsive dashboard with interactive charts and progress bars.
-* **N**ode.js: The foundation of my backend environment.
 
-## 📈 Planned Features
-- **Dynamic Skill Charts:** Visualizing my mastery level in JavaScript, TypeScript, and various frameworks.
-- **API-Powered Updates:** A custom-built administrative interface to update my CV data in real-time.
-- **English Learning Log:** Tracking my progress in English technical writing and communication.
-- **Project Showcase:** A direct link to other repositories developed during this study path.
 
-## ✍️ Language Focus
-This repository is written **exclusively in English**. I am utilizing AI assistance to refine my technical writing, correct my grammar, and ensure I am using industry-standard terminology. My goal is to achieve professional fluency in English alongside my technical growth.
+## 🏗️ Architectural Pattern: Clean Architecture & DDD
+To ensure long-term maintainability, this project follows **Clean Architecture** principles, decoupling logic into:
+* **Domain:** Enterprise business rules and interfaces.
+* **Application:** User-specific business rules (Use Cases).
+* **Infrastructure:** External tools (Express, Mongoose, Docker).
 
-## 🗓️ Roadmap (The "Monday Dev" Plan)
-- [ ] Phase 1: Environment setup and Express.js "Hello World" server.
-- [ ] Phase 2: MongoDB schema design for "Experience" and "Education."
-- [ ] Phase 3: Angular dashboard layout and Material Design integration.
-- [ ] Phase 4: API integration and live data visualization.
+## 🛠️ Tech Stack & Tools
+* **Monorepo Manager:** NPM Workspaces.
+* **Database:** MongoDB (Containerized via **Docker Compose**).
+* **Backend:** Node.js & Express.js (Modular API).
+* **Frontend:** Angular (Standalone Components & Signals).
+* **Shared Logic:** TypeScript library for cross-platform types and constants.
+
+## 📈 Key Features
+- **Dockerized Environment:** One-command setup for the entire development database.
+- **Dynamic CV Data:** Profile, Role, and Skills fetched in real-time from MongoDB.
+- **Security First:** Strict environment variable management and `.gitignore` policies.
+- **English Learning Log:** Documenting technical vocabulary and grammar improvements.
+
+## ✍️ Language Focus: Technical English
+This repository is a dual-purpose learning tool. I am practicing:
+* **Industry-standard terminology:** (e.g., *Staging, Atomic Commits, Decoupling, Middleware*).
+* **Professional Documentation:** Writing clear PRs and READMEs.
+* **Grammar Precision:** Refining my use of English in a professional context.
+
+## 🗓️ Roadmap
+- [x] **Phase 1:** Environment setup and Express.js "Hello World" server.
+- [x] **Phase 2:** Monorepo Migration & Docker Integration.
+- [ ] **Phase 3:** Clean Architecture Implementation (Moving logic to Domain/Application).
+- [ ] **Phase 4:** Angular Material Dashboard & Interactive Skill Charts.
+
+---
+
+### 📅 Weekly Progress
+
+**Monday, March 30, 2026**
+* **Goal:** Phase 2 - Monorepo & Database Integration.
+* **Completed:** * Migrated to a **Monorepo** structure using NPM Workspaces (`apps/api`, `apps/client`, `shared`).
+    * Configured **Docker Compose** for a local MongoDB instance.
+    * Integrated **Mongoose** to fetch CV profile data.
+    * Implemented **Atomic Commits** and a safe Git workflow (fixing a `.env` leak).
+* **English Milestone:** Mastered Git terminology (*Stage, Unstage, Remote, Upstream*). Practiced describing architectural layers (*Infrastructure vs. Domain*).
+
+**Monday, March 9, 2026**
+* **Goal:** Phase 1 - Environment Setup.
+* **Completed:** Initialized NPM, installed Express, and created a basic "Hello World" server.
+* **English Milestone:** Learned the difference between "show" and "display" and practiced using "it" as a subject.
+
+---
+*This project is updated every Monday. Stay tuned for more milestones!*
