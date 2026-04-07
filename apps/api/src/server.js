@@ -1,34 +1,22 @@
-require('dotenv').config();
-const express = require('express');
-const cors = require('cors');
-const mongoose = require('mongoose');
+require("dotenv").config();
+
+const express = require("express");
+const cors = require("cors");
+const mongoose = require("mongoose");
+
+const profileRoutes = require("./infrastructure/routes/profile.routes");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
-const MONGO_URI = process.env.MONGO_URI;
 
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect(MONGO_URI)
-  .then(() => console.log('Connected to MongoDB via .env!'))
-  .catch(err => console.error('Database connection error:', err));
+mongoose
+  .connect(process.env.MONGO_URI)
+  .then(() => console.log("Connected to MongoDB via .env!"));
 
-const cvSchema = new mongoose.Schema({
-  name: String,
-  role: String,
-  skills: [String]
+app.use("/api/cv", profileRoutes);
+
+app.listen(process.env.PORT, () => {
+  console.log(`API running on port ${process.env.PORT}`);
 });
-
-const Cv = mongoose.model('Cv', cvSchema, 'profile');
-
-app.get('/api/cv', async (req, res) => {
-  try {
-    const data = await Cv.findOne(); 
-    res.json(data);
-  } catch (error) {
-    res.status(500).json({ error: 'Failed to fetch CV' });
-  }
-});
-
-app.listen(PORT, () => console.log(`API running on port ${PORT}`));
