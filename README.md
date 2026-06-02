@@ -35,12 +35,24 @@ This repository is a dual-purpose learning tool. I am practicing:
 ## 🗓️ Roadmap
 - [x] **Phase 1:** Environment setup and Express.js "Hello World" server.
 - [x] **Phase 2:** Monorepo Migration & Docker Integration.
-- [ ] **Phase 3:** Clean Architecture Implementation (Moving logic to Domain/Application).
+- [x] **Phase 3:** Clean Architecture Implementation (Moving logic to Domain/Application).
 - [ ] **Phase 4:** Angular Material Dashboard & Interactive Skill Charts.
 
 ---
 
 ### 📅 Weekly Progress
+
+**Monday, April 6, 2026**
+
+* **Goal:** Phase 3 - Clean Architecture Implementation.
+* **Completed:**
+   * Refactored the API into *Domain*, *Application*, and *Infrastructure layers*.
+   * Introduced the GetProfile use case to separate business logic from Express routes.
+   * Implemented a dedicated *MongoProfileRepository* for database access.
+   * Extracted Mongoose models into the infrastructure layer.
+   * Simplified `server.js` by delegating responsibilities to specialized modules.
+   * Established a scalable foundation for future modules such as Projects, Experience, and Certifications.
+   * *English Milestone*: Practiced architectural terminology such as _Repository Pattern, Use Case, Dependency Inversion, Separation of Concerns, and Clean Architecture_.
 
 **Monday, March 30, 2026**
 * **Goal:** Phase 2 - Monorepo & Database Integration.
